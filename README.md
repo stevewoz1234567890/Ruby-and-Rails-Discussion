@@ -76,18 +76,6 @@ You’ll get the most value if you:
 
 ---
 
-## Get in touch
-
-**Ready to discuss your Ruby or Rails project?**
-
-- **Email:** [your.email@example.com](mailto:your.email@example.com)  
-- **Calendar / booking:** [your booking link](https://example.com) *(optional)*  
-- **Portfolio / case studies:** [your site or GitHub](https://github.com/yourusername) *(optional)*  
-
-Replace the bracketed links above with your real contact details. For a stronger first impression, add 1–2 short anonymized case studies (problem → approach → outcome) in a `CASE_STUDIES.md` or on your site and link them here.
-
----
-
 ## License & repo note
 
 This repository may hold discussion notes, samples, or collateral related to Ruby and Rails engagements. Unless otherwise stated, code and docs here are provided for evaluation and collaboration context—not as a substitute for a signed statement of work.
