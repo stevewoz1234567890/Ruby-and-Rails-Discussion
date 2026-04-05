@@ -72,6 +72,17 @@ If you benefited from these fixes, that table is a good place to start when you 
 4. **Treat scanners as a workflow, not a personality**  
    A noisy week from `rack` is still cheaper than a quiet week followed by an incident.
 
+### Ruby helpers in this repository
+
+This repo includes small **Ruby** utilities you can copy into an app or run from a project that has a `Gemfile.lock`:
+
+- `lib/rack_security/release_floor.rb` — compares a Rack version string to minimum patched releases for the **2.2.x**, **3.1.x**, and **3.2.x** lines (2026-04-01 batch).
+- `lib/rack_security/reporters.rb` — structured list of GitHub handles from the discussion thread (for thank-you posts or tooling).
+- `script/check_rack_security.rb` — run from the app root: `bundle exec ruby script/check_rack_security.rb` (exits non-zero only when the resolved version is **below** the configured floor).
+- `lib/tasks/rack_security.rake` — optional **Rails** task after you copy `lib/rack_security/` into the same app: `bundle exec rake rack:security_check`
+
+Other minor lines (for example **3.0.x**) are reported as `:unknown` so you are nudged to read upstream advisories instead of getting a false sense of safety.
+
 ---
 
 ## Closing
